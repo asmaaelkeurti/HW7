@@ -1,16 +1,10 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="UserMgmt.aspx.vb" Inherits="site_mgr_AddNewUser" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>ASP.NET Role Based Security - User Manager</title>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="UserMgmt.aspx.vb" Inherits="site_mgr_AddNewUser" MasterPageFile="~/Master.master"%>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link rel="stylesheet" type="text/css" href="~/sitemanager.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
-        <asp:HyperLink ID="link_roleManager" runat="server" NavigateUrl="~/site_mgr/RoleMgmt.aspx">Role Manager</asp:HyperLink>
+        <asp:HyperLink ID="link_roleManager" runat="server" NavigateUrl="~/Admin/site_mgr/RoleMgmt.aspx">Role Manager</asp:HyperLink>
         <h3>Create A New User:</h3>
         <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
             <WizardSteps>
@@ -114,6 +108,4 @@
 
 
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

@@ -1,17 +1,11 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="RoleMgmt.aspx.vb" Inherits="Account_AddRole" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>ASP.NET Role Based Security - Role Manager</title>
+﻿<%@ Page Language="VB" AutoEventWireup="false" MasterPageFile="~/Master.master" CodeFile="RoleMgmt.aspx.vb" Inherits="Account_AddRole" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link rel="stylesheet" type="text/css" href="~/sitemanager.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
         <div>
 
-            <asp:HyperLink ID="link_userManager" runat="server" NavigateUrl="~/site_mgr/UserMgmt.aspx">User Manager</asp:HyperLink>
+            <asp:HyperLink ID="link_userManager" runat="server" NavigateUrl="~/Admin/site_mgr/UserMgmt.aspx">User Manager</asp:HyperLink>
 
             <br /><br /><hr />
             
@@ -106,6 +100,4 @@
                 <br />
                 <asp:Button ID="btn_removeUserFromRole" runat="server" Text="Remove This User From This Role" />
             </div>
-    </form>
-</body>
-</html>
+</asp:Content>

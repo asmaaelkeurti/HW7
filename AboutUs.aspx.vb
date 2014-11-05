@@ -1,5 +1,5 @@
 ﻿
-Partial Class Admin_Default
+Partial Class Contact
     Inherits System.Web.UI.Page
 
 End Class

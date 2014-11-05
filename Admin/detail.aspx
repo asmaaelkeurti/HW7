@@ -29,7 +29,6 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <br />
-    <br />
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1">
         <EditItemTemplate>
             id:
@@ -105,5 +104,6 @@
             &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
         </ItemTemplate>
     </asp:FormView>
-</asp:Content>
+    <br />
+    </asp:Content>
 
