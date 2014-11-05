@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="UserMgmt.aspx.vb" Inherits="site_mgr_AddNewUser" MasterPageFile="~/Master.master"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link rel="stylesheet" type="text/css" href="~/sitemanager.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/site_mgr/sitemanager.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
