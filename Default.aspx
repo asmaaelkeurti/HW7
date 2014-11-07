@@ -29,15 +29,18 @@
     <br />
     <br />
     <br />
-    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1"
+        CssClass="cssgridview"
+            AlternatingRowStyle-CssClass="alt"
+            PagerStyle-CssClass="pgr"
+        >
         <Columns>
-            <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
-            <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-            <asp:BoundField DataField="order" HeaderText="order" SortExpression="order" />
-            <asp:BoundField DataField="family" HeaderText="family" SortExpression="family" />
-            <asp:BoundField DataField="tribe" HeaderText="tribe" SortExpression="tribe" />
-            <asp:BoundField DataField="genus" HeaderText="genus" SortExpression="genus" />
-            <asp:BoundField DataField="species" HeaderText="species" SortExpression="species" />
+            <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
+            <asp:BoundField DataField="order" HeaderText="Order" SortExpression="order" />
+            <asp:BoundField DataField="family" HeaderText="Family" SortExpression="family" />
+            <asp:BoundField DataField="tribe" HeaderText="Tribe" SortExpression="tribe" />
+            <asp:BoundField DataField="genus" HeaderText="Genus" SortExpression="genus" />
+            <asp:BoundField DataField="species" HeaderText="Species" SortExpression="species" />
             <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="detail.aspx?id={0}" Text="select" />
         </Columns>
     </asp:GridView>

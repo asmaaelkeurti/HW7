@@ -29,9 +29,7 @@
         <br />
         
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        
-        <br />
-        <br />
+        <p style="background-color:red;">Be careful, now you are admin</p>
             <asp:Image ID="Image1" runat="server" ImageUrl="~/1.jpg" Width="100%" />
         <br />
         
